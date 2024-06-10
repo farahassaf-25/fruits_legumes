@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Fruits and Legumes List</title>
+</head>
+<body class="bg-info">
+    <div class="container mt-5 bg-light text-dark">
+        <div class="row mb-3 mb-4 bg-primary p-3">
+            <div class="col-md-12 d-flex justify-content-start align-items-center form-inline">
+                <input type="text" id="addItemInput" class="form-control" placeholder="Fruits or Legumes">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="itemType" id="fruitRadio" value="Fruit">
+                    <label class="form-check-label" for="fruitRadio">Fruits</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="itemType" id="legumeRadio" value="Legume">
+                    <label class="form-check-label" for="legumeRadio">Legumes</label>
+                </div>
+                <div class="btn-group ml-auto" role="group">
+                    <button id="addSpecificBtn" class="btn btn-info mr-2">Add to specific list</button>
+                    <button id="addGeneralBtn" class="btn btn-danger">Add to general list</button>
+                </div>
+            </div>
+        </div>
+    <div class="row mb-3 bg-secondary p-3">
+        <div class="col-md-12 d-flex justify-content-start align-items-center form-inline">
+            <input type="text" id="itemInput" class="form-control" placeholder="Search for a Fruit or Legume">
+            <div class="btn-group ml-auto" role="group">
+                <button id="searchBtn" class="btn btn-info">Search for item</button>
+                <button id="deleteBtn" class="btn btn-danger ml-2">Delete an item</button>
+            </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="fruits-list-container">
+                <h4>List of Fruits</h4>
+                <ul class="list-group" id="fruitsList">
+                    <li class="list-group-item fruit">Fruits! - Apple</li>
+                    <li class="list-group-item fruit">Fruits! - Mangoes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="mixed-list-container">
+                <h4>List of Fruits & Legumes</h4>
+                <ul class="list-group" id="mixedList">
+                    <li class="list-group-item mixed">Fruits! - Pineapples</li>
+                    <li class="list-group-item mixed">Fruits! - Bananas</li>
+                    <li class="list-group-item mixed legume">Legumes! - Potato</li>
+                    <li class="list-group-item mixed legume">Legumes! - Lentils</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="legumes-list-container">
+                <h4>List of Legumes</h4>
+                <ul class="list-group" id="legumesList">
+                    <li class="list-group-item legume">Legumes! - Broccoli</li>
+                    <li class="list-group-item legume">Legumes! - Green Beans</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>

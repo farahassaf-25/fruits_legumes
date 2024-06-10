@@ -1,0 +1,52 @@
+.list-group-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.list-group-item.fruit {
+    background-color: green;
+    border-color: green;
+    color: white;
+}
+
+.list-group-item.legume {
+    background-color: orange;
+    border-color: orange;
+    color: white;  
+}
+
+.list-group-item.mixed {
+    background-color: blue;
+    border-color: blue;
+    color: white;
+}
+  
+.list-group-item:hover {
+    opacity: 0.8;
+}
+  
+.form-inline .form-control {
+    width: 350px;
+    transition: width 0.3s;
+  
+}
+  
+.form-inline .form-control:focus {
+    width: 450px;
+  
+}
+
+.form-inline .form-check {
+    margin: 0 15px;
+}
+
+.highlighted {
+    background-color: yellow !important;
+    color: black !important;
+    border: none;
+}
+
+.list-container:hover {
+    transform: scale(1.05);
+}
